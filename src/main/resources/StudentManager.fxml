@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.StudentController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="242.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="columnRollnumber" prefWidth="150.0" text="Rollnumber" />
+          <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="251.0" text="Name" />
+            <TableColumn fx:id="columnAvatar" minWidth="0.0" prefWidth="175.0" text="Avatar" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtRollnumber" layoutX="14.0" layoutY="273.0" promptText="Roll number" />
+      <JFXTextField fx:id="txtName" layoutX="225.0" layoutY="273.0" promptText="Name" />
+      <JFXTextField fx:id="txtAvatar" layoutX="427.0" layoutY="273.0" promptText="Avatar Url" />
+      <JFXButton fx:id="btnSave" layoutX="427.0" layoutY="321.0" onAction="#saveStudent" text="Save" />
+      <JFXButton fx:id="btnDelete" layoutX="485.0" layoutY="321.0" text="Delete" onAction="#doDelete"/>
+   </children>
+</AnchorPane>
